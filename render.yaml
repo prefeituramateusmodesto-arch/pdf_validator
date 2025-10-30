@@ -1,0 +1,28 @@
+# render.yaml
+services:
+  - type: web
+    name: pdf-validator-frontend
+    env: node
+    rootDir: frontend
+    buildCommand: npm install && npm run build
+    startCommand: npm run preview
+    buildFilter:
+      paths:
+        - frontend/**/*
+    envVars:
+      - key: NODE_VERSION
+        value: 18
+    staticPublishPath: dist
+
+  - type: web
+    name: pdf-validator-backend
+    env: python
+    rootDir: backend
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn app:app --host 0.0.0.0 --port 10000
+    buildFilter:
+      paths:
+        - backend/**/*
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.11
