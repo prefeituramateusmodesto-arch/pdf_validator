@@ -1,14 +1,14 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
 
-// Configuração de build para Vercel (React + Vite)
 export default defineConfig({
   plugins: [react()],
+  base: './', // necessário para evitar erro 404 ao recarregar a página
   build: {
-    outDir: 'dist', // saída padrão
+    outDir: 'dist', // pasta padrão que o Render usará para publicar
   },
   server: {
     port: 5173,
-    open: true,
+    host: true,
   },
-});
+})
