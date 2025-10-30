@@ -1,6 +1,6 @@
 fastapi
-uvicorn[standard]
-pypdf
-python-dotenv
+uvicorn
 sendgrid
 openai
+PyMuPDF
+python-dotenv
