@@ -4,3 +4,4 @@ sendgrid
 openai
 PyMuPDF
 python-dotenv
+python-multipart
