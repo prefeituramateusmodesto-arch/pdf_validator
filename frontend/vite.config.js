@@ -1,11 +1,11 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
-// Configuração padrão do Vite para React
+// Configuração de build para Vercel (React + Vite)
 export default defineConfig({
   plugins: [react()],
   build: {
-    outDir: 'dist', // pasta de saída do build
+    outDir: 'dist', // saída padrão
   },
   server: {
     port: 5173,
