@@ -1,0 +1,65 @@
+body {
+font-family: 'Inter', sans-serif;
+background-color: #f2f4f7;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 100vh;
+margin: 0;
+}
+
+
+.app-container {
+text-align: center;
+}
+
+
+.card {
+background: white;
+padding: 2rem;
+border-radius: 1rem;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+width: 320px;
+margin: auto;
+}
+
+
+input[type="email"], input[type="file"] {
+display: block;
+width: 100%;
+margin: 1rem 0;
+padding: 0.6rem;
+border-radius: 0.5rem;
+border: 1px solid #ccc;
+}
+
+
+button {
+background: #0070f3;
+color: white;
+border: none;
+padding: 0.6rem 1.2rem;
+border-radius: 0.5rem;
+cursor: pointer;
+}
+
+
+button.logout {
+background: #e63946;
+margin-top: 1rem;
+}
+
+
+button:hover {
+opacity: 0.9;
+}
+
+
+.success {
+color: #2a9d8f;
+}
+
+
+.error {
+color: #e76f51;
+}
